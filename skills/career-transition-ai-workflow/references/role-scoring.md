@@ -21,6 +21,17 @@ Evidence strength is ordered as:
 
 Do not give high confidence to an E0-only match.
 
+## Missing-JD rule
+
+Use the full 100-point score only when representative JD evidence is available. Without reliable JDs:
+
+- mark `JD competency overlap` and `Hiring-access feasibility` as `not assessed` rather than inventing numbers;
+- score only relevant capability evidence, transfer potential, project verifiability, and user preference/constraints, for a provisional total of 70 points;
+- label the result `provisional <score>/70`, not `<score>/100`;
+- cap direction confidence at `medium` and state which JD evidence is needed to recalculate the full score.
+
+Do not infer current hiring accessibility from a job title alone.
+
 ## Direction buckets
 
 ### A — direct match
@@ -50,3 +61,5 @@ Return:
 - micro-validation task;
 - primary and backup project candidates;
 - confidence and what would change it.
+
+When the missing-JD rule applies, replace JD and hiring-access numeric values with `not assessed` and return a provisional score over 70.
