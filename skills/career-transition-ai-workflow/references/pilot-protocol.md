@@ -15,13 +15,17 @@ Do not collect company secrets, customer data, identity documents, or unredacted
 
 ## Session
 
-1. Record baseline: target, application count, interview count, available evidence, confidence, and weekly time.
-2. Run intake and bottleneck diagnosis without coaching the answer.
-3. Ask the user to rate whether the diagnosis is understandable and evidence-based.
-4. Present directions and observe whether the differences are meaningful.
-5. Let the user select and complete one micro-validation within 2–6 hours.
-6. Review artifacts with the fixed rubric and record disagreements.
-7. Recommend the final project only when the gate passes.
+1. Ask each participant to install the Skill from `https://github.com/rae-ch-rui/find-jobs/tree/main/skills/career-transition-ai-workflow` with `$skill-installer`.
+2. Start a fresh Codex conversation and invoke `$career-transition-ai-workflow`; do not paste expected answers or evaluator notes into that conversation.
+3. Record baseline: target, application count, interview count, available evidence, confidence, and weekly time.
+4. Run intake and bottleneck diagnosis without coaching the answer.
+5. Ask the user to rate whether the diagnosis is understandable and evidence-based.
+6. Present directions and observe whether the differences are meaningful.
+7. Let the user select and complete one micro-validation within 2–6 hours.
+8. Review artifacts with the fixed rubric and record disagreements.
+9. Recommend the final project only when the gate passes.
+
+Use a separate conversation for each participant. Do not require participants to provide an API key or use a shared hosted service. The installed Skill directory is the tested artifact.
 
 ## Measures
 
