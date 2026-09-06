@@ -15,6 +15,24 @@
 
 当前版本不会自动抓取招聘网站、替用户投递、保证面试，也不会把一个 Prompt 当作完整项目。
 
+## 从 GitHub 安装
+
+在 Codex 中调用 `$skill-installer`，并发送：
+
+```text
+请从 https://github.com/rae-ch-rui/find-jobs/tree/main/skills/career-transition-ai-workflow 安装这个 Skill。
+```
+
+安装成功后，这个 Skill 会从下一轮对话开始可用。它不需要 OpenAI API Key，也不需要创建托管 Skill；完整目录就是安装单元。
+
+如需命令行安装，可运行：
+
+```bash
+python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" \
+  --repo rae-ch-rui/find-jobs \
+  --path skills/career-transition-ai-workflow
+```
+
 ## 快速使用
 
 在已经安装或加载本目录的 Codex 环境中调用：
@@ -53,12 +71,12 @@ career-transition-ai-workflow/
 
 ## 验证方式
 
-1. 运行 `references/evaluation-cases.md` 中的五个行为案例。
-2. 检查输出是否符合 `references/output-template.md`。
-3. 用 `references/end-to-end-demo.md` 核对完整阶段转换。
-4. 按 `references/pilot-protocol.md` 完成 3–5 位真实用户试点。
-5. 修改后运行 Skill 结构校验。
+1. 在仓库根目录运行 `./scripts/validate_local.sh`。
+2. 将 `references/evaluation-cases.md` 中的五个案例分别放入全新对话，不要向模型提供预期答案。
+3. 检查输出是否符合 `references/output-template.md`，并用 `references/end-to-end-demo.md` 核对阶段转换。
+4. 按 `references/pilot-protocol.md` 让 3–5 位真实用户分别安装并试用。
+5. 只根据重复出现或后果明确的失败修改规则，不因措辞差异修改 Skill。
 
 ## 当前完成标准
 
-当前版本属于“可测试的 Skill MVP”：规则、状态、输出契约、案例和演示已齐全。若要成为独立求职产品，还需要另行实现 JD 数据接入、用户账户与进度保存、项目执行环境、成果托管和效果数据闭环。
+当前版本属于“可安装、可测试的本地 Skill MVP”：规则、状态、输出契约、案例和演示已齐全。GitHub 中的 `skills/career-transition-ai-workflow/` 是唯一源文件。若以后需要更正式的分发，可以再将最终 Skill bundle 包装为 skills-only Plugin；这不是当前试用的前置条件。
