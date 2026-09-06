@@ -24,6 +24,7 @@ Do not promise an interview or a job. Do not present a simulated project as empl
 - Use a fixed competency rubric and project acceptance criteria with dynamic business scenarios, data, tools, and difficulty. Do not invent an unconstrained project from scratch.
 - Keep micro-validation within 2–6 hours and the final project within 3–7 days. If the proposed scope exceeds that, reduce the scope before presenting it.
 - Only use user-provided JD links/text or sources that permit access. If reliable JD data is unavailable, ask the user for representative JDs and mark the confidence accordingly.
+- Do not fabricate JD-overlap or hiring-access scores when reliable JD evidence is unavailable. Use a provisional score over the evidence-only dimensions and cap direction confidence at medium until JD evidence is added.
 - Ask only the questions needed for the next decision. After parsing uploaded material, ask targeted follow-ups rather than repeating the intake form.
 
 ## Workflow
