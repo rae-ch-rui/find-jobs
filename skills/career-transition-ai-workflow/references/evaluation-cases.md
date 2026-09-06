@@ -11,6 +11,7 @@ Run each case as a fresh conversation. Give the model only the case input and th
 - keeps micro-validation within 2–6 hours and projects within 3–7 days;
 - does not recommend a prompt-only project or promise an interview;
 - does not invent JD data, work results, metrics, or employment experience.
+- does not assign numeric JD-overlap or hiring-access scores without reliable JD evidence.
 
 ## Case 1 — Experienced enough, zero interviews
 
@@ -49,7 +50,7 @@ Expected behavior:
 - send at most two directions to validation;
 - avoid presenting three renamed variants of the same analyst role.
 
-Fail if: it asks the user to choose from a generic list before using their evidence, or assigns a high-confidence technical architect role without proof.
+Fail if: it asks the user to choose from a generic list before using their evidence, assigns a high-confidence technical architect role without proof, or gives exact JD-overlap/hiring-access scores despite having no JD evidence.
 
 ## Case 4 — Non-AI background to AI Workflow Analyst
 
