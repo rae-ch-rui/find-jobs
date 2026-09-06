@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 求职路径验证</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">3–5 人封闭试用</p>
+        <h1>AI 求职路径验证</h1>
+        <p>
+          用已有经历判断岗位方向，并生成一个可以真正完成和展示的验证项目。
+          系统不会保证面试，也不会把模拟项目描述成工作经历。
+        </p>
+      </header>
+
+      <section class="card setup">
+        <label for="access-code">试用码</label>
+        <input id="access-code" type="password" autocomplete="off" />
+        <p class="privacy">
+          请先删除姓名、手机号、公司机密、客户信息和身份证明。本试用版不支持文件上传。
+        </p>
+      </section>
+
+      <section id="messages" class="messages" aria-live="polite"></section>
+
+      <form id="chat-form" class="composer">
+        <label for="message">描述你的情况</label>
+        <textarea
+          id="message"
+          rows="6"
+          placeholder="例如：我投递了 60 个 AI 运营岗位但没有面试。我有一段电商运营实习，会做报表和活动复盘，但没有可运行项目……"
+          required
+        ></textarea>
+        <div class="actions">
+          <button id="reset" type="button" class="secondary">重新开始</button>
+          <button id="send" type="submit">发送</button>
+        </div>
+      </form>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
+
