@@ -145,7 +145,7 @@ button {
 }
 
 button.secondary {
-  background: tranparent;
+  background: transparent;
   color: #365046;
   border: 1px solid #aebbb5;
 }
