@@ -28,6 +28,8 @@ Do not promise an interview or a job. Do not present a simulated project as empl
 
 ## Workflow
 
+Follow the stage gates in [workflow-states.md](references/workflow-states.md) for multi-turn work. Do not skip from intake directly to a final project when role fit is still uncertain.
+
 1. Collect the minimum intake. Read [input-schema.md](references/input-schema.md) when designing or running intake.
 2. Normalize experience into capability evidence and normalize target JDs into competency clusters.
 3. Diagnose the likely no-interview bottleneck and state what evidence supports it.
@@ -38,7 +40,7 @@ Do not promise an interview or a job. Do not present a simulated project as empl
 
 ## Required output
 
-When enough information is available, return:
+When enough information is available, render the current stage using [output-template.md](references/output-template.md) and return:
 
 - a concise evidence summary;
 - the likely application bottleneck;
@@ -49,3 +51,11 @@ When enough information is available, return:
 - explicit unknowns, risks, and next actions.
 
 For incomplete inputs, state exactly what is missing and ask the smallest useful question instead of fabricating a score.
+
+## Evaluation and maintenance
+
+When testing or revising this skill:
+
+- run the five behavioral cases in [evaluation-cases.md](references/evaluation-cases.md);
+- compare the full interaction with [end-to-end-demo.md](references/end-to-end-demo.md) without copying its conclusions into unrelated cases;
+- use [pilot-protocol.md](references/pilot-protocol.md) for 3–5 real-user trials and only change rules when observed failures justify the change.
