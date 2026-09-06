@@ -23,4 +23,21 @@ printf '%s\n' "$required_files" | while IFS= read -r relative_path; do
 done
 
 validator_root=${CODEX_HOME:-$HOME/.codex}
-validator="$validator_root/skills/.system/skill-creator/script��]ZX��ݘ[Y]K�H��]ؚۗ[�I���܈�[�Y]H[�]ی�]ێ�Y���[X[�]���[�Y]H���]�۝[���H�	����[�Y]H�X�	�[\ܝX[[	���]�۝[���N�[��]ؚۗ[�I�[�Y]B���XZ�B�ۙB��Y��Y���[Y]܈�H	���[��]ؚۗ[��N�[���]ؚۗ[����[Y]܈����[�\���[�B�X�����^]ZX���[Y]܈܈]�PSS\[�[��H\�[�]�Z[X�N��\]Z\�YY�[H�X���\��Y����B��X�����[��[�[Y][ۈ\��Y�	��[�\��
+validator="$validator_root/skills/.system/skill-creator/scripts/quick_validate.py"
+python_bin=''
+
+for candidate in python3 python; do
+  if command -v "$candidate" >/dev/null 2>&1 \
+    && "$candidate" -c 'import yaml' >/dev/null 2>&1; then
+    python_bin=$candidate
+    break
+  fi
+done
+
+if [ -f "$validator" ] && [ -n "$python_bin" ]; then
+  "$python_bin" "$validator" "$skill_dir"
+else
+  echo "Codex quick validator or its YAML dependency is unavailable; required-file checks passed."
+fi
+
+echo "Local Skill validation passed: $skill_dir"
