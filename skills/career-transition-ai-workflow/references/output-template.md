@@ -38,12 +38,15 @@ Repeat for A, B, and C only when the user has no settled direction.
 - 常见岗位名：<title variants>
 - 为什么值得测试：<evidence-backed explanation>
 - 证据：<items and evidence levels>
-- 评分：现有能力 <0–25>；JD 重合 <0–20>；迁移潜力 <0–20>；短项目可验证性 <0–15>；偏好约束 <0–10>；招聘可达性 <0–10>；总分 <0–100>
+- 评分（有可靠 JD）：现有能力 <0–25>；JD 重合 <0–20>；迁移潜力 <0–20>；短项目可验证性 <0–15>；偏好约束 <0–10>；招聘可达性 <0–10>；总分 <0–100>
+- 暂定评分（无可靠 JD）：现有能力 <0–25>；JD 重合 `未评估`；迁移潜力 <0–20>；短项目可验证性 <0–15>；偏好约束 <0–10>；招聘可达性 `未评估`；暂定总分 <0–70>
 - 关键缺口：<one or two gaps>
 - 最大风险：<failure mode>
 - 微型验证：<2–6 hour task summary>
 - 置信度：<low | medium | high>；如果 <new evidence>，判断会改变
 ```
+
+Without reliable JD evidence, use only the provisional scoring line and do not set direction confidence above `medium`.
 
 ## Micro-validation task
 
