@@ -44,21 +44,21 @@ Moderate direct overlap, high transfer potential, and one or two gaps that a 3�
 
 ### C — overlooked potential
 
-Low surface-level overlap but a credible transfer hypothesis. Require two or three supporting evidence points, explicit uncertainty, and a smaller validation task before recommending a full project.
+Low surface-level overlap but a credible transfer hypothesis. Require two or three supporting evidence points, explicit uncertainty, and a narrower question lens before recommending a final MVP.
 
 The three recommendations are a portfolio of options, not a single rank order. Include one direction from each bucket when evidence allows and avoid returning three renamed versions of the same role.
 
-These are hypotheses to test, not directions the user must choose before validation. The system should select the strongest validation hypothesis and optionally one contrasting hypothesis based on score, uncertainty, and information value.
+These are hypotheses to test, not directions the user must choose before a potential check. The system should select the strongest potential hypothesis and optionally one contrasting hypothesis based on score, uncertainty, and information value.
 
-## Validation assignment
+## Potential-check assignment
 
 Choose automatically:
 
 - one primary hypothesis when it clearly has the highest evidence and information value;
 - one primary plus one contrasting hypothesis when two responsibility clusters remain materially plausible;
-- a single cross-direction task with two scoring lenses when one task can fairly distinguish the hypotheses.
+- one question sequence with two clearly separated scoring lenses when the same scenarios can fairly distinguish the hypotheses.
 
-Explain why the task was assigned. Allow the user to veto for time, access, ethics, disability, or a genuine preference constraint, then choose the next-best test. Do not ask “Which career do you choose?” before the task is completed.
+Explain why the questions were assigned. Allow the user to request an accessible response format or veto a scenario for ethics, privacy, disability, or a genuine constraint, then choose the next-best question. Do not ask “Which career do you choose?” before the potential check is completed.
 
 ## Direction card
 
@@ -70,7 +70,7 @@ Return:
 - current match, transfer potential, project verifiability, and feasibility scores;
 - key missing evidence;
 - likely failure risk;
-- micro-validation task;
+- role-potential question focus;
 - primary and backup project candidates;
 - confidence and what would change it.
 

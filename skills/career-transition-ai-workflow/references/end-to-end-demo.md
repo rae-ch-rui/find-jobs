@@ -23,7 +23,7 @@ The three supplied JDs are supplemented with current publicly accessible posting
 
 The resulting responsibility map separates AI operations, business-process/workflow analysis, and evaluation operations. The user confirms that they mean business-process and automation work, not ERP implementation or routine campaign operations. This is a meaning confirmation, not a final career choice.
 
-## 4. Direction hypotheses and system-assigned validation
+## 4. Direction hypotheses and system-assigned potential check
 
 ### A — AI Operations / Automation Operations
 
@@ -31,37 +31,34 @@ Score 78/100. Strongest evidence: operations context, reporting, coordination, a
 
 ### B — AI Workflow Analyst
 
-Score 72/100. Transfer is credible from process coordination and reporting, but integration and testing are unproven. This direction should enter micro-validation.
+Score 72/100. Transfer is credible from process coordination and reporting, but integration and testing are unproven. This direction should enter a role-potential question check.
 
 ### C — AI Evaluation Operations
 
-Score 64/100. Campaign review discipline and structured reporting may transfer to test-case operations, but there is no current evaluation evidence. Keep confidence low and use a smaller validation before any final project.
+Score 64/100. Campaign review discipline and structured reporting may transfer to test-case operations, but there is no current evaluation evidence. Keep confidence low and use a contrasting question lens before any final MVP.
 
-The system assigns B as the primary validation hypothesis because it has both credible transfer evidence and the highest unresolved information value. The user may veto the task for a real constraint, but is not asked to choose a career direction first.
+The system assigns B as the primary potential hypothesis because it has both credible transfer evidence and the highest unresolved information value. The user may request a different response format, but is not asked to choose a career direction first.
 
-## 5. Micro-validation task
+## 5. Role-potential question check
 
-Title: Campaign-material intake and review router.
+Total timebox: 60 minutes. Questions are asked one at a time; the user does not build a workflow.
 
-- Timebox: four hours.
-- Scenario: synthetic campaign requests arrive in a form or CSV with deadline, channel, asset type, owner, and free-text notes.
-- Build: parse records, classify urgency and missing fields, route complete items to a ready queue, route uncertain/high-risk items to human review, and write a run result.
-- Deliver: process map, runnable flow or recorded demo, five test cases, one failure path, result log, and a short reflection.
-- Pass: at least four of five tests route correctly; ambiguous input reaches human review; the user explains why AI is used only for free-text interpretation.
+Example question 1:
 
-## 6. Validation review and second responsibility confirmation
+- Role workflow stage: requirements clarification.
+- Responsibility: turn a vague business request into actors, inputs, outputs, constraints, and success measures.
+- Capability: problem framing and stakeholder clarification.
+- Scenario: a manager asks to “use AI to speed up campaign-material approval,” but teams disagree about what is slow.
+- Answer requirement: list the first five questions to ask and explain which decision each answer affects; 10 minutes.
+- Not required: a tool, process diagram, or technical architecture.
 
-Illustrative submitted result:
+The remaining questions test process decomposition, AI/rule/human boundaries, exception handling, acceptance testing, and stakeholder tradeoffs. Each question shows the same role-workflow mapping without revealing a model answer.
 
-- a Feishu form and table automation handles deterministic fields;
-- an LLM step classifies free-text urgency;
-- empty deadline and conflicting priority go to human review;
-- five tests are recorded, four pass, and one reveals an overly broad urgency rule;
-- the user explains their own workflow design and correction.
+## 6. Potential review and second responsibility confirmation
 
-Score: 82/100. New evidence: E3 process decomposition and tool execution; E2 testing and failure awareness. Direction B increases from medium-low to medium-high confidence. The failed case becomes useful project evidence rather than being hidden.
+Illustrative score: 79/100, `P2 — credible`. The answers repeatedly show useful problem framing, process decomposition, human-review judgment, and test thinking. They do not prove Feishu automation, API integration, or runnable delivery; those remain explicit final-MVP gaps.
 
-The system recommends business-process and AI workflow analysis as the primary direction and AI operations as the backup. The user confirms that requirements clarification, workflow design, automation opportunity analysis, testing, and exception handling match the target; ERP configuration and pure operations execution do not. Only now is the final project generated.
+The system recommends business-process and AI workflow analysis as the primary direction and AI operations as the backup. The user confirms that requirements clarification, workflow design, automation opportunity analysis, testing, and exception handling match the target; ERP configuration and pure operations execution do not. Only now is the final MVP dynamically generated.
 
 ## 7. Final project recommendation
 
@@ -69,13 +66,27 @@ Primary project: Multi-channel campaign request triage and delivery-monitoring w
 
 Why selected: it reuses the user's actual campaign-operations context while adding the missing evidence: integration, test design, human review, logs, and business tradeoffs.
 
-Five-day plan:
+Five-day roadmap and role mapping:
 
-1. Define users, inputs, states, exceptions, success metrics, and synthetic dataset.
-2. Build the intake, validation, classification, and routing path.
-3. Add one external tool/API integration and human-review queue.
-4. Run normal, missing-field, conflicting-rule, malformed-input, and service-failure tests; record results.
-5. Improve the failed paths and package README, diagram, demo, screenshots, metrics, limitations, and reflection.
+| Step | Target-role workflow | Responsibility | Capability | Artifact | Acceptance evidence |
+|---|---|---|---|---|---|
+| 1 | Discovery and requirements | Clarify users, pain, scope, and success | Requirements analysis | Problem brief and requirement table | Ambiguities and exclusions are explicit |
+| 2 | As-is/to-be process design | Map states, handoffs, rules, and exceptions | Process decomposition | Process map and synthetic dataset | Main and exception paths are traceable |
+| 3 | Solution design and implementation | Choose AI/rule/human boundaries and integrate a tool | Automation design and integration | Runnable routing path | One genuine integration and human-review queue work |
+| 4 | Acceptance and risk testing | Design normal and failure cases | Testing and exception handling | Test table and run log | At least five tests include technical failure |
+| 5 | Improvement and handoff | Analyze failures and communicate value | Iteration and documentation | README, demo, metrics, limitations | Claims match recorded evidence |
+
+The Skill then expands only step 1:
+
+- Why this step exists: a workflow analyst cannot design the solution until the business problem, actors, boundaries, and acceptance conditions are explicit.
+- Input: the synthetic campaign-request context and the user's earlier question answers.
+- Actions: identify stakeholders; write the current pain; separate symptoms from causes; define in/out of scope; specify five acceptance conditions; record unresolved questions.
+- Deliverable: one-page problem brief and a requirement table.
+- Self-check: every requirement has a source, priority, acceptance condition, and unresolved-risk field.
+- Common failure: jumping directly to an LLM or tool choice. If blocked, return the uncertain stakeholder, input, or success measure.
+- Job-search evidence: requirements clarification, scope control, and acceptance-definition decisions that the user can explain in an interview.
+
+After the user submits this artifact, the Skill checks it before expanding step 2.
 
 Acceptance gate:
 

@@ -44,10 +44,10 @@ Do not require a user with an uncertain direction to name or choose a role. Thei
 Record separately:
 
 - `meaning_confirmation`: which researched responsibility clusters match what the user originally meant, including corrections and exclusions;
-- `validation_reaction`: which parts of the micro-task felt understandable, energizing, difficult, or undesirable;
-- `target_confirmation`: the responsibility profile accepted after validation, before final-project generation.
+- `potential_check_reaction`: which question scenarios felt understandable, energizing, difficult, or undesirable;
+- `target_confirmation`: the responsibility profile accepted after the potential check, before final-MVP generation.
 
-Do not treat `meaning_confirmation` as a final career choice. Do not ask for `target_confirmation` before the micro-validation evidence exists.
+Do not treat `meaning_confirmation` as a final career choice. Do not ask for `target_confirmation` before the potential-check evidence exists.
 
 ### Application history
 

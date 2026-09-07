@@ -49,6 +49,6 @@ The user may confirm more than one cluster. Confirmation means “this is the wo
 
 ### Gate 2 — target confirmation
 
-After micro-validation, compare the observed evidence, the confirmed responsibility profile, and the user's experience of the task. Recommend a primary direction and one backup, then ask the user to confirm or revise the actual target responsibilities before generating the final 3–7 day project.
+After the role-potential question check, compare the observed reasoning, the confirmed responsibility profile, and the user's experience of the scenarios. Recommend a primary direction and one backup, then ask the user to confirm or revise the actual target responsibilities before dynamically generating the final 3–7 day MVP.
 
 Use no more than these two planned confirmation gates unless the user changes the target or new evidence materially contradicts the role map. Summarize prior confirmations instead of repeatedly asking the same question.
