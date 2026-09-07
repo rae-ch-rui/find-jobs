@@ -24,9 +24,15 @@ Dynamic context:
 
 Score: business understanding 20, process decomposition 20, AI intervention 15, minimal design 15, tool execution 15, testing/error awareness 10, explanation 5.
 
-Do not send more than two directions to micro-validation in one cycle.
+Do not test more than two directions in one cycle. Assign the test from the evidence and information value instead of requiring the user to select a career direction first. When possible, use one task with two clearly separated scoring lenses rather than two unrelated projects.
 
 ## Final project selection
+
+Do not generate the final project immediately after scoring or user preference. Require:
+
+- completed micro-validation evidence;
+- a system recommendation of one primary direction and one backup;
+- the user's post-validation confirmation of the actual target responsibilities, not merely a title.
 
 Select one primary and one backup project. Score candidates:
 

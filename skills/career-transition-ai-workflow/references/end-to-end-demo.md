@@ -17,7 +17,13 @@ Evidence map:
 
 Most likely bottleneck: mixed positioning and evidence gap. The resume describes routine operations but does not expose process ownership, automation decisions, tests, or measurable artifacts. The three JDs repeatedly require workflow analysis, tool integration, documentation, and acceptance testing. This does not prove the user lacks those abilities; it shows the application currently cannot verify them.
 
-## 3. Direction hypotheses
+## 3. Current-market role research and first responsibility confirmation
+
+The three supplied JDs are supplemented with current publicly accessible postings. The search uses responsibility terms such as workflow mapping, requirements analysis, automation opportunity identification, integration, acceptance testing, and exception handling rather than searching only `AI Workflow Analyst`.
+
+The resulting responsibility map separates AI operations, business-process/workflow analysis, and evaluation operations. The user confirms that they mean business-process and automation work, not ERP implementation or routine campaign operations. This is a meaning confirmation, not a final career choice.
+
+## 4. Direction hypotheses and system-assigned validation
 
 ### A — AI Operations / Automation Operations
 
@@ -31,9 +37,9 @@ Score 72/100. Transfer is credible from process coordination and reporting, but 
 
 Score 64/100. Campaign review discipline and structured reporting may transfer to test-case operations, but there is no current evaluation evidence. Keep confidence low and use a smaller validation before any final project.
 
-User selects B.
+The system assigns B as the primary validation hypothesis because it has both credible transfer evidence and the highest unresolved information value. The user may veto the task for a real constraint, but is not asked to choose a career direction first.
 
-## 4. Micro-validation task
+## 5. Micro-validation task
 
 Title: Campaign-material intake and review router.
 
@@ -43,7 +49,7 @@ Title: Campaign-material intake and review router.
 - Deliver: process map, runnable flow or recorded demo, five test cases, one failure path, result log, and a short reflection.
 - Pass: at least four of five tests route correctly; ambiguous input reaches human review; the user explains why AI is used only for free-text interpretation.
 
-## 5. Validation review
+## 6. Validation review and second responsibility confirmation
 
 Illustrative submitted result:
 
@@ -55,7 +61,9 @@ Illustrative submitted result:
 
 Score: 82/100. New evidence: E3 process decomposition and tool execution; E2 testing and failure awareness. Direction B increases from medium-low to medium-high confidence. The failed case becomes useful project evidence rather than being hidden.
 
-## 6. Final project recommendation
+The system recommends business-process and AI workflow analysis as the primary direction and AI operations as the backup. The user confirms that requirements clarification, workflow design, automation opportunity analysis, testing, and exception handling match the target; ERP configuration and pure operations execution do not. Only now is the final project generated.
+
+## 7. Final project recommendation
 
 Primary project: Multi-channel campaign request triage and delivery-monitoring workflow — a simulated business project for AI Workflow Analyst applications.
 
@@ -81,7 +89,7 @@ Acceptance gate:
 
 Backup project: E-commerce weekly-report synthesis and anomaly review workflow. Switch only if request routing cannot be completed within the timebox; preserve integration, testing, and human-review requirements.
 
-## 7. Portfolio packaging
+## 8. Portfolio packaging
 
 Label: `模拟业务项目｜个人独立完成`.
 

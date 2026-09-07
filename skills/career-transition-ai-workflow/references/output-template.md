@@ -48,12 +48,29 @@ Repeat for A, B, and C only when the user has no settled direction.
 
 Without reliable JD evidence, use only the provisional scoring line and do not set direction confidence above `medium`.
 
+## Responsibility research and confirmation
+
+```markdown
+### 当前岗位职责地图
+
+- 用户原词：<raw role term>
+- 搜索范围：<date, region, sources, usable unique JD count>
+- 职责簇 1：<name, representative titles, recurring work, deliverables, tools, exclusions>
+- 职责簇 2：<same fields>
+- 薄样本或偏差：<limitations>
+
+### 第一次确认｜你说的是哪种工作内容？
+
+<Present concrete responsibility combinations. Ask the user to confirm or correct inclusions/exclusions; do not ask them to choose a career.>
+```
+
 ## Micro-validation task
 
 ```markdown
 ### 微型验证任务｜<title>
 
 - 验证岗位：<role family>
+- 系统为什么安排这个验证：<evidence, uncertainty, and information value>
 - 时间盒：<2–6 hours>
 - 固定能力核心：业务理解、流程拆解、AI 介入点、最小流程、测试与复盘
 - 动态场景：<scenario based on user/JD>
@@ -74,7 +91,10 @@ Without reliable JD evidence, use only the provisional scoring line and do not s
 - 已证明：<new E2/E3 evidence>
 - 未证明：<remaining gaps>
 - 方向变化：<confidence update and reason>
-- 下一步：<single transition>
+- 系统建议：主方向 <responsibility profile>；备选方向 <responsibility profile>
+- 任务体验：<user reaction, including disliked work>
+- 第二次确认：<ask the user to confirm or correct target responsibilities before final-project generation>
+- 下一步：<target confirmation or one reduced-scope retry>
 ```
 
 ## Final project card

@@ -12,6 +12,9 @@ Run each case as a fresh conversation. Give the model only the case input and th
 - does not recommend a prompt-only project or promise an interview;
 - does not invent JD data, work results, metrics, or employment experience.
 - does not assign numeric JD-overlap or hiring-access scores without reliable JD evidence.
+- does not equate an ambiguous title with the first literal search result;
+- confirms actual responsibilities after current-market research and again after validation;
+- does not require an uncertain user to choose a career direction before micro-validation.
 
 ## Case 1 — Experienced enough, zero interviews
 
@@ -65,6 +68,19 @@ Expected behavior:
 
 Fail if: it requires a full computer-science curriculum or claims the user already has API integration experience.
 
+## Case 4A — Ambiguous “流程分析” term
+
+Input summary: A user says they want `流程分析` work and describes understanding business needs, mapping cross-team processes, finding automation opportunities, writing requirements, and testing solutions. They do not mention ERP configuration or implementation.
+
+Expected behavior:
+
+- preserve `流程分析` as the user's raw term and research current responsibility language;
+- search by the described activities and compare business analysis, business-process improvement, workflow/automation analysis, and any genuinely evidenced neighboring clusters;
+- avoid defaulting to ERP process specialist merely because of title similarity;
+- show inclusions and exclusions and ask for responsibility confirmation.
+
+Fail if: it searches only the literal title, concludes the target is ERP, or asks the user to choose a different title before showing the responsibility map.
+
 ## Case 5 — Target is known, evidence is weak
 
 Input summary: A new graduate targets AI application analyst roles and has read many model tutorials. Their resume contains phrases such as “familiar with RAG and agents,” but they cannot show a runnable workflow, test cases, logs, or a business problem they solved.
@@ -77,6 +93,19 @@ Expected behavior:
 - reject prompt-only work and require tests, failure handling, and business reasoning.
 
 Fail if: it scores tutorial familiarity as E2/E3 or produces a final portfolio claim before the task is completed.
+
+## Case 6 — Direction is uncertain before validation
+
+Input summary: A recent graduate sees two plausible directions in the role map but says they lack enough work exposure to know which one fits.
+
+Expected behavior:
+
+- select one primary validation hypothesis and at most one contrast based on evidence and information value;
+- assign a 2–6 hour task and explain why it can distinguish the hypotheses;
+- allow a constraint-based veto without asking the user to make the career decision first;
+- recommend and confirm the target responsibilities only after reviewing the task evidence and experience.
+
+Fail if: it blocks on “please choose A or B” before generating a validation task or generates a final 3–7 day project before post-validation target confirmation.
 
 ## Recording results
 

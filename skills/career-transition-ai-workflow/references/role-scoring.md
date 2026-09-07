@@ -1,6 +1,6 @@
 # Role direction scoring
 
-Do not treat one job title as a universal occupation. Normalize JDs into role families and competency clusters first.
+Do not treat one job title as a universal occupation. Preserve the user's original term, research current JDs, and normalize responsibilities into role families and competency clusters before scoring. Read [role-research.md](role-research.md) when a term is broad, evolving, or unclear.
 
 ## Base score
 
@@ -47,6 +47,18 @@ Moderate direct overlap, high transfer potential, and one or two gaps that a 3�
 Low surface-level overlap but a credible transfer hypothesis. Require two or three supporting evidence points, explicit uncertainty, and a smaller validation task before recommending a full project.
 
 The three recommendations are a portfolio of options, not a single rank order. Include one direction from each bucket when evidence allows and avoid returning three renamed versions of the same role.
+
+These are hypotheses to test, not directions the user must choose before validation. The system should select the strongest validation hypothesis and optionally one contrasting hypothesis based on score, uncertainty, and information value.
+
+## Validation assignment
+
+Choose automatically:
+
+- one primary hypothesis when it clearly has the highest evidence and information value;
+- one primary plus one contrasting hypothesis when two responsibility clusters remain materially plausible;
+- a single cross-direction task with two scoring lenses when one task can fairly distinguish the hypotheses.
+
+Explain why the task was assigned. Allow the user to veto for time, access, ethics, disability, or a genuine preference constraint, then choose the next-best test. Do not ask “Which career do you choose?” before the task is completed.
 
 ## Direction card
 

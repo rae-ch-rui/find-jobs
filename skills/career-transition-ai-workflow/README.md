@@ -8,12 +8,14 @@
 
 - 诊断没有面试更可能是定位、证据、岗位匹配、投递策略还是能力缺口；
 - 在没有明确目标岗位时提供 A 高匹配、B 可迁移、C 被忽略潜力三个方向；
+- 对宽泛或新兴岗位词进行当前市场 JD 搜索，按真实职责而不是标题字面做消歧；
+- 在搜索后确认一次职责含义，在微型验证后再次确认最终目标职责；
 - 用固定 70% 能力核心和动态 30% 场景生成微型验证任务；
 - 根据验证结果推荐一个主项目和一个备选项目；
 - 要求最终项目包含可运行流程、工具或 API 集成、测试、异常路径和基本记录；
 - 把产出包装成诚实标注的个人或模拟项目，而不是虚构工作经历。
 
-当前版本不会自动抓取招聘网站、替用户投递、保证面试，也不会把一个 Prompt 当作完整项目。
+当前版本可以搜索公开可访问的招聘信息，但不会绕过登录或反爬限制、替用户投递、保证面试，也不会把一个 Prompt 当作完整项目。
 
 ## 从 GitHub 安装
 
@@ -60,6 +62,7 @@ career-transition-ai-workflow/
 ├── README.md
 └── references/
     ├── input-schema.md
+    ├── role-research.md
     ├── workflow-states.md
     ├── role-scoring.md
     ├── project-rules.md
@@ -72,7 +75,7 @@ career-transition-ai-workflow/
 ## 验证方式
 
 1. 在仓库根目录运行 `./scripts/validate_local.sh`。
-2. 将 `references/evaluation-cases.md` 中的五个案例分别放入全新对话，不要向模型提供预期答案。
+2. 将 `references/evaluation-cases.md` 中的全部案例分别放入全新对话，不要向模型提供预期答案。
 3. 检查输出是否符合 `references/output-template.md`，并用 `references/end-to-end-demo.md` 核对阶段转换。
 4. 按 `references/pilot-protocol.md` 让 3–5 位真实用户分别安装并试用。
 5. 只根据重复出现或后果明确的失败修改规则，不因措辞差异修改 Skill。

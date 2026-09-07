@@ -23,7 +23,10 @@ Use progressive disclosure. The first intake should take roughly 10–15 minutes
 
 If known:
 
-- up to three target role names;
+- `raw_role_term`: up to three titles or phrases in the user's own words; do not normalize them before role research;
+- `expected_responsibilities`: what the user believes the job actually does day to day;
+- `wanted_deliverables_or_outcomes`: what they want to create, improve, or be responsible for;
+- `excluded_responsibilities`: nearby work they do not mean, such as ERP implementation, pure sales, customer success, or pure model engineering;
 - one to three representative JDs or links;
 - preferred city, salary, work mode, and industry constraints.
 
@@ -33,6 +36,18 @@ If unknown:
 - comfort with technical work, analysis, communication, design, and operations;
 - industries of interest or exclusion;
 - whether the user wants a fast-entry path or a higher-upside transition.
+
+Do not require a user with an uncertain direction to name or choose a role. Their activities, preferences, exclusions, and evidence are sufficient to begin current-market research.
+
+## Responsibility confirmations
+
+Record separately:
+
+- `meaning_confirmation`: which researched responsibility clusters match what the user originally meant, including corrections and exclusions;
+- `validation_reaction`: which parts of the micro-task felt understandable, energizing, difficult, or undesirable;
+- `target_confirmation`: the responsibility profile accepted after validation, before final-project generation.
+
+Do not treat `meaning_confirmation` as a final career choice. Do not ask for `target_confirmation` before the micro-validation evidence exists.
 
 ### Application history
 
