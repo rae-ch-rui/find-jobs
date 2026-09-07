@@ -36,8 +36,10 @@ Use a separate conversation for each participant. Do not require participants to
 - user agreement with evidence facts, separately from agreement with conclusions;
 - A/B/C distinctness, question-check acceptance, and post-check target-confirmation rate;
 - JD sample size, source coverage, and correction rate at the first responsibility-confirmation gate;
+- fast versus deep research mode, JD count, search duration, and whether the saturation stop fired;
 - potential-question completion rate and optional practical-probe rate;
 - percentage of final-MVP steps with a clear responsibility, capability, deliverable, and acceptance mapping;
+- time to first useful output and approximate total turns before the potential check starts;
 - rubric score and reviewer/model score difference;
 - final-project acceptance, scope reduction, and completion;
 - portfolio artifacts produced;

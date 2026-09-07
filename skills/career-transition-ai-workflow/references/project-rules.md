@@ -8,6 +8,15 @@ Do not generate the final MVP immediately after scoring or user preference. Requ
 - a system recommendation of one primary direction and one backup;
 - the user's post-check confirmation of the actual target responsibilities, not merely a title.
 
+Before changing from `project_ready` to `project_active`, also confirm:
+
+- one business or industry scenario;
+- daily time available and target completion window;
+- available tools, access, budget, and technical constraints;
+- which prior E1/E2 experience should be reused when possible.
+
+If any of these is missing, remain in `project_ready`. Show a provisional roadmap if useful, then ask one consolidated question rather than starting step 1. When business context is thin, offer two short scenario options grounded in the user's existing experience and ask which context is more credible; do not default repeatedly to customer-service routing.
+
 Select one primary and one backup project. Score candidates:
 
 | Dimension | Weight |
@@ -19,6 +28,16 @@ Select one primary and one backup project. Score candidates:
 | Runnable and evaluable | 10 |
 | Portfolio signal | 10 |
 | User interest and constraints | 5 |
+
+Use these anchors within each dimension instead of free-form precision:
+
+- `0% of weight`: no supporting evidence or the requirement is contradicted;
+- `25% of weight`: weak signal and substantial new learning or assumptions;
+- `50% of weight`: plausible baseline with important unproven gaps;
+- `75% of weight`: strong fit with one manageable gap;
+- `100% of weight`: directly supported and fully satisfies the dimension.
+
+Use intermediate values only when the evidence clearly falls between two anchors, and cite that evidence.
 
 Require a score of at least 70 and all of the following:
 
@@ -62,6 +81,8 @@ Every step must state:
 - `形成的求职证据`: what can honestly be shown in a portfolio or discussed in an interview.
 
 For the entire project, include a mapping table from project steps to target-role workflow, responsibility, capability, artifact, and acceptance evidence. If a step cannot be linked to a researched responsibility or a required project gate, remove it.
+
+The mapping table must use exactly six columns: `步骤`, `岗位工作流程位置`, `对应岗位职责`, `训练/证明的能力`, `本步交付物`, and `验收证据`. Every row must contain an observable acceptance result; do not shorten the last column to a generic `证据` label.
 
 Provide scaffolding without taking ownership away from the user. Explain examples and options, but require the user to make and document the key business, workflow, tool, and testing decisions.
 

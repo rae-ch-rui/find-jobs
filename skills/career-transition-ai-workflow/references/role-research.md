@@ -20,8 +20,37 @@ If the user explicitly asks not to browse, honor that constraint and use only su
 2. Extract the activities, objects, tools, stakeholders, and outcomes the user associates with it.
 3. Expand the phrase into three to six plausible role families and title variants. Queries must include responsibility language, not only the original title.
 4. Search current, publicly accessible mainland-China postings or employer career pages. Prefer postings from the last 60 days; when a publication date is unavailable, mark it unknown rather than treating it as current. Do not bypass logins, anti-bot controls, or access restrictions.
-5. Aim for 20–30 unique recent JDs across the candidate families. Deduplicate reposts and record the collection date, source, city, title, and usable responsibility text. Treat fewer than eight usable unique JDs as a thin sample and lower confidence.
+5. Use the smallest auditable sample that resolves the decision. Deduplicate reposts and record the collection date, source, city, title, URL, and responsibility cluster.
 6. Cluster the JDs by recurring responsibilities and outcomes. Keep neighboring clusters separate when their daily work, deliverables, or hiring bar differs.
+
+## Tiered sampling for speed
+
+### Fast role clarification — default
+
+- Use 8–12 usable unique JDs across at least two source domains when the role is broad or uncertain.
+- Search candidate families in one batched pass when tooling permits.
+- Stop when the latest three usable JDs add no new core responsibility, deliverable, or important exclusion.
+- If the user supplies three to five recent, representative JDs for a known role, start with them and search only enough additional evidence to check obvious source or company bias.
+
+### Deep market comparison — conditional
+
+Expand to 20–30 usable unique JDs only when:
+
+- two or more responsibility clusters remain materially competitive after the fast sample;
+- the user asks about market breadth, title distribution, or hiring-access feasibility;
+- the fast sample is concentrated in one company, city, or source;
+- a high-impact direction decision remains low confidence.
+
+Fewer than eight usable unique JDs is a thin sample. It can support provisional language clarification, but not a settled market claim or numeric hiring-access score.
+
+## Compact JD ledger
+
+Any numeric sample-size claim must be backed by a displayed compact ledger with one row per counted unique JD:
+
+| # | Date | City | Title | Source/domain | Responsibility cluster | URL |
+|---:|---|---|---|---|---|---|
+
+The claimed count must equal the ledger row count. Mark unknown dates explicitly. If a result cannot be opened or contains no usable responsibility text, do not count it. When the ledger is absent, describe the research qualitatively and do not claim a numeric sample size.
 
 For example, `流程分析` must not default to `ERP 流程专员`. Test at least the responsibility clusters suggested by the user's description, which may include business process analysis / BA, process improvement, workflow or automation analysis, operations analysis, and ERP implementation only when the collected evidence supports it.
 
@@ -35,6 +64,7 @@ For each credible cluster, return:
 - common tools or systems;
 - important exclusions: what this cluster usually does not mean;
 - sample size, source mix, date, and confidence;
+- a compact JD ledger or an explicit statement that no numeric sample-size claim is being made;
 - the user's evidence that may transfer and the evidence still missing.
 
 Do not merge clusters merely because they share one title. Do not claim market prevalence from search-result order or a small sample.

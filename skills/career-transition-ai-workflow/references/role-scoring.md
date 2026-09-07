@@ -21,6 +21,16 @@ Evidence strength is ordered as:
 
 Do not give high confidence to an E0-only match.
 
+Use consistent anchors within each weighted dimension:
+
+- `0% of weight`: no relevant evidence or a direct contradiction;
+- `25% of weight`: weak E0/E1 signal with major uncertainty;
+- `50% of weight`: plausible E1 support with material gaps;
+- `75% of weight`: strong E1 or relevant E2 support with a manageable gap;
+- `100% of weight`: direct E2/E3 support and no material gap for that dimension.
+
+Use intermediate values only when the evidence clearly falls between anchors. Cite the evidence beside the score; do not let numerical precision imply certainty.
+
 ## Missing-JD rule
 
 Use the full 100-point score only when representative JD evidence is available. Without reliable JDs:

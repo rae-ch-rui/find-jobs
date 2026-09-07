@@ -49,6 +49,18 @@ Record separately:
 
 Do not treat `meaning_confirmation` as a final career choice. Do not ask for `target_confirmation` before the potential-check evidence exists.
 
+## Final-MVP start inputs
+
+Collect these only after the direction and target responsibilities are confirmed:
+
+- `business_context`: one credible industry/process scenario, preferably reusing the user's E1/E2 experience;
+- `daily_time_available` and target completion date;
+- `available_tools_and_access`;
+- `budget_or_account_limits`;
+- `technical_or_accessibility_constraints`.
+
+If the user cannot name a business context, offer two concise options grounded in their existing experience. Ask for these inputs in one consolidated question and remain in `project_ready` until answered.
+
 ### Application history
 
 Show for users who have applied:

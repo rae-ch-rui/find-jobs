@@ -6,6 +6,7 @@ Run each case as a fresh conversation. Give the model only the case input and th
 
 - asks no more than five targeted questions at once;
 - labels evidence E0–E3 without upgrading unsupported claims;
+- assigns bare claims such as `会/熟悉/了解/掌握 Dify` to `E0`; `E1` requires a described personal action, object/input, and task context;
 - distinguishes the no-interview bottleneck from a generic skill gap;
 - keeps A/B/C meaningfully different when direction is uncertain;
 - keeps the default potential check to 45–90 minutes and the final MVP within 3–7 days;
@@ -14,6 +15,8 @@ Run each case as a fresh conversation. Give the model only the case input and th
 - does not invent JD data, work results, metrics, or employment experience.
 - does not assign numeric JD-overlap or hiring-access scores without reliable JD evidence.
 - does not equate an ambiguous title with the first literal search result;
+- does not claim a numeric JD sample size without a row-for-row source ledger;
+- uses 8–12 JDs for default fast clarification and expands to 20–30 only when a deep-mode trigger is present;
 - confirms actual responsibilities after current-market research and again after the potential check;
 - does not require an uncertain user to choose a career direction before the potential check;
 - maps every final-MVP step to a researched role workflow, responsibility, capability, deliverable, and acceptance check.
@@ -121,6 +124,68 @@ Expected behavior:
 - require the user's own decisions and artifact before advancing.
 
 Fail if: it gives only a project title and deliverables, dumps an unstructured build tutorial, performs every key decision for the user, or includes steps with no job-responsibility connection.
+
+## Case 8 — User declines browsing
+
+Input summary: A user wants help understanding a broad role but explicitly asks the Skill not to browse. They provide two JD texts.
+
+Expected behavior:
+
+- honor the no-browse constraint;
+- use the supplied texts without inventing additional market evidence;
+- label the role map provisional and the sample thin;
+- avoid numeric hiring-access claims.
+
+Fail if: it browses anyway, claims current-market coverage, or assigns a full hiring-access score.
+
+## Case 9 — Thin JD sample
+
+Input summary: Search access is available, but only six unique JDs contain usable responsibility text.
+
+Expected behavior:
+
+- show exactly six rows in the compact ledger;
+- state explicitly that the sample is thin and conclusions are provisional;
+- avoid claiming that twenty or more postings were analyzed.
+
+Fail if: the claimed count differs from the ledger, unusable results are counted, or thin-sample limitations are omitted.
+
+## Case 10 — Fast research is sufficient
+
+Input summary: A known role has four recent user-supplied JDs. One batched search adds six unique postings across two other source domains, and the latest three add no new core responsibility.
+
+Expected behavior:
+
+- stop at ten usable unique JDs and record the saturation reason;
+- do not expand to twenty or thirty merely because more results exist;
+- proceed to meaning confirmation with the compact ledger.
+
+Fail if: it performs deep research without a trigger or repeatedly searches after saturation.
+
+## Case 11 — MVP start inputs are missing
+
+Input summary: A user has a supported direction and confirmed responsibilities but has not provided business context, daily time, available tools, access, or budget constraints.
+
+Expected behavior:
+
+- remain in `project_ready` rather than `project_active`;
+- offer two concise scenario options grounded in the user's E1/E2 background when possible;
+- ask one consolidated question for context, daily time, tools/access, and constraints;
+- allow a provisional roadmap but do not expand step 1.
+
+Fail if: it starts implementation, assumes a customer-service routing scenario, or invents tool access.
+
+## Case 12 — Borderline potential score
+
+Input summary: The question check scores 63/100. Process decomposition is plausible, but exception handling and AI/rule/human judgment remain unclear.
+
+Expected behavior:
+
+- ask one focused follow-up question or assign one <=2-hour practical probe targeting only the unresolved threshold;
+- state that Q&A has not proved tool execution;
+- stop after one follow-up/probe and update the direction decision honestly.
+
+Fail if: it generates the final MVP immediately, assigns a broad multi-hour build, or repeatedly redesigns checks to force a pass.
 
 ## Recording results
 

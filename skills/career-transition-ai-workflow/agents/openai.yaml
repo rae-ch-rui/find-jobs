@@ -1,6 +1,6 @@
 interface:
   display_name: "Career Transition AI Workflow"
-  short_description: "Diagnose gaps and build an AI workflow portfolio"
-  default_prompt: "Use $career-transition-ai-workflow to diagnose my job-search bottleneck and recommend a validated AI workflow project."
+  short_description: "Research roles, test potential, and guide an AI workflow MVP"
+  default_prompt: "Use $career-transition-ai-workflow to diagnose my job-search bottleneck, research current role responsibilities, test my potential with scenario questions, and guide a confirmed direction into an AI workflow portfolio MVP."
 policy:
   allow_implicit_invocation: true

@@ -37,4 +37,6 @@ python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/inst
 
 行为测试位于 [`evaluation-cases.md`](skills/career-transition-ai-workflow/references/evaluation-cases.md)，3–5 人试用流程位于 [`pilot-protocol.md`](skills/career-transition-ai-workflow/references/pilot-protocol.md)。
 
+最新完整行为测试基线和后续修复记录位于 [`behavioral-evaluation-2026-09-07.md`](behavioral-evaluation-2026-09-07.md)。Skill 默认使用阶段化快速模式：普通职责消歧搜索 8–12 份可审计 JD，只有存在深度研究触发条件时才扩展到 20–30 份。
+
 本仓库不要求 OpenAI API 密钥，也不创建服务端托管 Skill。GitHub 中的 Skill 目录是当前唯一源文件。

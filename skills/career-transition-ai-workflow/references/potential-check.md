@@ -50,6 +50,16 @@ Score potential separately from E0–E3 employment/project evidence:
 | Stakeholder communication | 10 |
 | Learning reflection | 5 |
 
+Apply the following anchor proportion to each dimension's maximum weight:
+
+- `0%`: no relevant signal;
+- `25%`: an answer appears only after substantial prompting;
+- `50%`: an independent basic answer, but conflicts or exceptions are missed;
+- `75%`: a clear answer that handles at least one tradeoff or exception;
+- `100%`: an independent, well-prioritized answer that handles conflicts, uncertainty, consequences, and revision.
+
+Use intermediate values only when the answer clearly falls between anchors. Quote or paraphrase the specific answer evidence used.
+
 Potential labels:
 
 - `P0 — insufficient signal`: the answers do not yet support a direction conclusion;
@@ -72,4 +82,3 @@ For every scored dimension, return:
 - what remains untested and must be tested in the final MVP.
 
 Recommend one primary responsibility profile and one backup only after the questions are complete. Then run the second responsibility-confirmation gate from [role-research.md](role-research.md).
-

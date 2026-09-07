@@ -7,6 +7,8 @@ skill_dir="$repo_root/skills/career-transition-ai-workflow"
 required_files='SKILL.md
 agents/openai.yaml
 references/input-schema.md
+references/role-research.md
+references/potential-check.md
 references/workflow-states.md
 references/role-scoring.md
 references/project-rules.md

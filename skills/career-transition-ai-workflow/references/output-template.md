@@ -54,10 +54,14 @@ Without reliable JD evidence, use only the provisional scoring line and do not s
 ### 当前岗位职责地图
 
 - 用户原词：<raw role term>
-- 搜索范围：<date, region, sources, usable unique JD count>
+- 搜索范围：<date, region, source domains, usable unique JD count; count must equal ledger rows>
 - 职责簇 1：<name, representative titles, recurring work, deliverables, tools, exclusions>
 - 职责簇 2：<same fields>
 - 薄样本或偏差：<limitations>
+
+| # | 日期 | 城市 | 岗位名 | 来源/domain | 职责簇 | URL |
+|---:|---|---|---|---|---|---|
+| <one row per counted usable unique JD> |
 
 ### 第一次确认｜你说的是哪种工作内容？
 
@@ -145,8 +149,12 @@ Without reliable JD evidence, use only the provisional scoring line and do not s
 <Explain only why it is the fallback and when to switch.>
 ```
 
+When an MVP roadmap is shown, use the six column headers exactly as written: `步骤`, `岗位工作流程位置`, `对应岗位职责`, `训练/证明的能力`, `本步交付物`, and `验收证据`. Populate every cell for every step; a generic `证据` column is not a substitute for `验收证据`.
+
 ## Mandatory honesty labels
 
 - Use `个人项目` or `模拟业务项目` when the work was not completed for an employer.
 - Never convert coursework, tutorials, or generated output into claimed employment experience.
 - Separate measured results from expected business value.
+- Never replace an `E0`–`E3` code with only a synonym such as `自述`, `描述级`, or `无法核验`.
+- Keep exposure and capability separate. Required examples: `完成过 RAG 教程 — E1 — 学习活动` may coexist with `能独立设计 RAG — E0 — 仅为能力自述`; `自称熟悉 Dify — E0 — 未描述本人执行的动作、处理对象和任务场景`. Do not label bare familiarity as E1.
